@@ -1,0 +1,34 @@
+{
+  "name": "twitter-meme-generator",
+  "version": "1.0.0",
+  "description": "a meme generator in twitter styling",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npm run build:clear && npm run build:js && npm run build:css && npm run build:assets",
+    "build:js": "tsc",
+    "build:assets": "node ./tools/deployAssets.js",
+    "build:clear": "node ./tools/clearDeploy.js",
+    "build:css": "sass ./src/sass/root.sass ./dist/css/style.css",
+    "build:css:watch": "sass --watch ./src/sass/root.sass ./dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosunLP/Twitter-Meme-Generator.git"
+  },
+  "keywords": [
+    "twitter",
+    "memes",
+    "typescript"
+  ],
+  "author": "Jonas Pfalzgraf",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/JosunLP/Twitter-Meme-Generator/issues"
+  },
+  "homepage": "https://github.com/JosunLP/Twitter-Meme-Generator#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.43.4",
+    "typescript": "^4.4.4"
+  }
+}
