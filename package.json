@@ -8,7 +8,7 @@
     "build:js": "tsc",
     "build:assets": "node ./tools/deployAssets.js",
     "build:clear": "node ./tools/clearDeploy.js",
-    "build:css": "sass ./src/sass/root.sass ./dist/css/style.css",
+    "build:css": "sass ./src/sass/main.sass ./dist/css/style.css",
     "build:css:watch": "sass --watch ./src/sass/root.sass ./dist/css/style.css"
   },
   "repository": {

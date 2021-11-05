@@ -1,3 +1,4 @@
 import { App } from "./classes/App";
 
-new App();
+let app = App.getInstance();
+app.run();

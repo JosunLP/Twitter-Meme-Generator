@@ -5,7 +5,7 @@ export class App {
 
     private static instance: App
 
-    constructor() {
+    private constructor() {
         console.log('App loadet!')
     }
 
