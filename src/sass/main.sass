@@ -1,0 +1,24 @@
+@import "../../node_modules/bootstrap/scss/bootstrap"
+@import "root"
+@import "scaleMixin"
+@import "header"
+@import "footer"
+
+form
+    @include formBasic
+
+#menue
+
+    .userForm, .postForm
+        max-width: 30%
+        height: 100%
+        padding: 1rem
+        border: 1px solid #ccc
+        margin: 1rem
+
+        .submit
+            width: 10rem
+
+    .postForm
+        .postText
+            min-height: 10rem
