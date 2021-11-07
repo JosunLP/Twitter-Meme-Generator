@@ -1,7 +1,10 @@
+import { Guid } from "../classes/Guid";
+import { Post } from "./post";
+
 /**
  * Chat
  */
-class Chat {
+export class Chat {
 
     /**
      * Get the chat's id
@@ -24,9 +27,9 @@ class Chat {
 
     public posts: Post[];
 
-    constructor() {
-        this.id = '';
-        this.name = '';
-        this.posts = [];
+    constructor(name: string) {
+        this.id = Guid.newGuid();
+        this.name = name;
+        this.posts = new Array<Post>();
     }
 }

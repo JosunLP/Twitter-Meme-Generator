@@ -1,7 +1,9 @@
+import { Guid } from '../classes/Guid'
+
 /**
  * Profile
  */
-class Profile {
+export class Profile {
 
     /**
      * Get the profiles's id
@@ -24,9 +26,9 @@ class Profile {
 
     public tag: string
 
-    constructor() {
-        this.id = ''
-        this.name = ''
-        this.tag = ''
+    constructor(name: string, tag: string) {
+        this.id = Guid.newGuid();
+        this.name = name
+        this.tag = tag
     }
 }

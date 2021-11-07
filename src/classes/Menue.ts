@@ -28,7 +28,7 @@ export class Menue {
         let postList = document.createElement("div")
         menue.id = "menue"
         menue.classList.add("menue")
-        profileForm.classList.add("userForm")
+        profileForm.classList.add("profileForm")
         postForm.classList.add("postForm")
         userList.classList.add("userList")
         postList.classList.add("postList")
@@ -53,13 +53,15 @@ export class Menue {
 
         profileNameInput.type = "text"
         profileNameInput.placeholder = "Name"
+        profileNameInput.id = "profileName"
         profileNameInput.classList.add("form-control")
         profileTagInput.type = "text"
         profileTagInput.placeholder = "Tag"
+        profileNameInput.id = "profileTag"
         profileTagInput.classList.add("form-control")
         profileSubmit.type = "submit"
         profileSubmit.value = "Submit"
-        profileSubmit.classList.add("submit")
+        profileSubmit.classList.add("submitProfile")
         profileSubmit.classList.add("btn")
         profileSubmit.classList.add("btn-primary")
 
